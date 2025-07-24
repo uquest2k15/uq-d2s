@@ -1,0 +1,1038 @@
+/* Tax Consulting Page Styles */
+
+/* Hero Section */
+.tax-consulting-hero {
+    padding: 120px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    text-align: center;
+}
+
+.tax-consulting-hero .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tax-consulting-hero .hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--contrast);
+    margin-bottom: 20px;
+}
+
+.tax-consulting-hero .hero-title .accent-text {
+    color: var(--accent);
+}
+
+.tax-consulting-hero .hero-subtitle {
+    font-size: 20px;
+    color: var(--contrast-2);
+    margin-bottom: 40px;
+}
+
+.tax-consulting-hero .hero-cta-button {
+    display: inline-block;
+    padding: 16px 40px;
+    background-color: var(--accent);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.tax-consulting-hero .hero-cta-button:hover {
+    background-color: #3da8c9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(78, 192, 225, 0.3);
+}
+
+/* Intro Section */
+.tax-consulting-intro {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.tax-consulting-intro .intro-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--contrast);
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.tax-consulting-intro .intro-title .accent-text {
+    color: var(--accent);
+}
+
+.tax-consulting-intro .intro-description {
+    font-size: 18px;
+    color: var(--contrast-2);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Stats Section */
+.tax-consulting-stats {
+    padding: 80px 0;
+}
+
+.tax-consulting-stats .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--contrast);
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.tax-consulting-stats .section-title .accent-text {
+    color: var(--accent);
+}
+
+.tax-consulting-stats .section-subtitle {
+    font-size: 20px;
+    color: var(--contrast-2);
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.tax-consulting-stats .section-description {
+    font-size: 16px;
+    color: var(--contrast-2);
+    text-align: center;
+    margin-bottom: 60px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tax-consulting-stats .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tax-consulting-stats .stat-item {
+    text-align: center;
+}
+
+.tax-consulting-stats .stat-number {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--accent);
+    display: inline-block;
+}
+
+.tax-consulting-stats .stat-suffix {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--accent);
+    display: inline-block;
+}
+
+.tax-consulting-stats .stat-label {
+    font-size: 16px;
+    color: var(--contrast-2);
+    margin-top: 8px;
+}
+
+/* Core Areas Section */
+.tax-consulting-core-areas {
+    padding: 80px 0;
+}
+
+.tax-consulting-core-areas .section-title,
+.tax-consulting-core-areas .section-subtitle {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tax-consulting-core-areas .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--contrast);
+}
+
+.tax-consulting-core-areas .section-subtitle {
+    font-size: 18px;
+    color: var(--contrast-2);
+    margin-bottom: 60px;
+}
+
+.tax-consulting-core-areas .core-areas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.tax-consulting-core-areas .core-area-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.tax-consulting-core-areas .core-area-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.tax-consulting-core-areas .card-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--contrast);
+    margin-bottom: 12px;
+}
+
+.tax-consulting-core-areas .card-stat {
+    font-size: 18px;
+    color: var(--contrast-2);
+    margin-bottom: 30px;
+}
+
+.tax-consulting-core-areas .card-stat .accent-text {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.tax-consulting-core-areas .card-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tax-consulting-core-areas .card-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: var(--contrast-2);
+}
+
+.tax-consulting-core-areas .check-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+/* Services Section */
+.tax-consulting-services {
+    padding: 80px 0;
+}
+
+.tax-consulting-services .section-title,
+.tax-consulting-services .section-subtitle {
+    text-align: center;
+}
+
+.tax-consulting-services .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--contrast);
+    margin-bottom: 16px;
+}
+
+.tax-consulting-services .section-subtitle {
+    font-size: 18px;
+    color: var(--contrast-2);
+    margin-bottom: 60px;
+}
+
+.tax-consulting-services .services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.tax-consulting-services .service-card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.tax-consulting-services .card-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--contrast);
+    margin-bottom: 12px;
+}
+
+.tax-consulting-services .card-description {
+    font-size: 18px;
+    color: var(--contrast-2);
+    margin-bottom: 30px;
+}
+
+.tax-consulting-services .card-description .accent-text {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.tax-consulting-services .service-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+.tax-consulting-services .service-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: var(--contrast-2);
+}
+
+.tax-consulting-services .check-wrapper {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.tax-consulting-services .circle-icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+.tax-consulting-services .check-icon {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 4px;
+    left: 4px;
+}
+
+.tax-consulting-services .recommendation-title,
+.tax-consulting-services .effect-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--contrast);
+    margin-bottom: 16px;
+}
+
+.tax-consulting-services .recommendation-list,
+.tax-consulting-services .effect-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+.tax-consulting-services .recommendation-list li,
+.tax-consulting-services .effect-list li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: var(--contrast-2);
+}
+
+.tax-consulting-services .recommendation-list li:before,
+.tax-consulting-services .effect-list li:before {
+    content: "•";
+    position: absolute;
+    left: 8px;
+    color: var(--accent);
+}
+
+/* Process Section */
+.tax-consulting-process {
+    padding: 80px 0;
+    background: white;
+}
+
+.tax-consulting-process .section-title,
+.tax-consulting-process .section-subtitle {
+    text-align: center;
+}
+
+.tax-consulting-process .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--contrast);
+    margin-bottom: 16px;
+}
+
+.tax-consulting-process .section-subtitle {
+    font-size: 18px;
+    color: var(--contrast-2);
+    margin-bottom: 60px;
+}
+
+.tax-consulting-process .process-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tax-consulting-process .process-group {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.tax-consulting-process .process-item {
+    background: var(--base);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.tax-consulting-process .process-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.tax-consulting-process .step-number {
+    display: inline-block;
+    padding: 8px 20px;
+    background: var(--accent);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.tax-consulting-process .process-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--contrast);
+    margin-bottom: 8px;
+}
+
+.tax-consulting-process .process-subtitle {
+    font-size: 16px;
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+.tax-consulting-process .process-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.tax-consulting-process .process-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: var(--contrast-2);
+}
+
+.tax-consulting-process .process-arrow {
+    font-size: 32px;
+    color: var(--accent);
+    font-weight: 700;
+}
+
+/* Industry Section */
+.tax-consulting-industry {
+    padding: 80px 0;
+}
+
+.tax-consulting-industry .section-title,
+.tax-consulting-industry .section-subtitle {
+    text-align: center;
+}
+
+.tax-consulting-industry .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--contrast);
+    margin-bottom: 16px;
+}
+
+.tax-consulting-industry .section-subtitle {
+    font-size: 18px;
+    color: var(--contrast-2);
+    margin-bottom: 60px;
+}
+
+.tax-consulting-industry .industry-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.tax-consulting-industry .industry-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.tax-consulting-industry .industry-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.tax-consulting-industry .card-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--contrast);
+    margin-bottom: 12px;
+}
+
+.tax-consulting-industry .card-stat {
+    font-size: 18px;
+    color: var(--contrast-2);
+    margin-bottom: 30px;
+}
+
+.tax-consulting-industry .card-stat .accent-text {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.tax-consulting-industry .list-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--contrast);
+    margin-bottom: 16px;
+}
+
+.tax-consulting-industry .industry-list,
+.tax-consulting-industry .target-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+.tax-consulting-industry .industry-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: var(--contrast-2);
+}
+
+.tax-consulting-industry .target-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: var(--contrast-2);
+}
+
+.tax-consulting-industry .target-list li:before {
+    content: "•";
+    position: absolute;
+    left: 4px;
+    color: var(--accent);
+}
+
+/* Pricing Section */
+.tax-consulting-pricing {
+    padding: 80px 0;
+    background: white;
+}
+
+.tax-consulting-pricing .section-title,
+.tax-consulting-pricing .section-subtitle {
+    text-align: center;
+}
+
+.tax-consulting-pricing .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--contrast);
+    margin-bottom: 16px;
+}
+
+.tax-consulting-pricing .section-subtitle {
+    font-size: 18px;
+    color: var(--contrast-2);
+    margin-bottom: 60px;
+}
+
+.tax-consulting-pricing .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tax-consulting-pricing .pricing-card {
+    background: var(--base);
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.tax-consulting-pricing .card-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--contrast);
+    margin-bottom: 16px;
+}
+
+.tax-consulting-pricing .pricing-model {
+    font-size: 20px;
+    color: var(--contrast-2);
+    margin-bottom: 30px;
+}
+
+.tax-consulting-pricing .pricing-model .accent-text {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.tax-consulting-pricing .pricing-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    text-align: left;
+}
+
+.tax-consulting-pricing .pricing-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: var(--contrast-2);
+}
+
+.tax-consulting-pricing .pricing-note {
+    font-size: 14px;
+    color: var(--contrast-2);
+    font-style: italic;
+}
+
+/* Success Stories Section */
+.tax-consulting-success {
+    padding: 80px 0;
+}
+
+.tax-consulting-success .section-title,
+.tax-consulting-success .section-subtitle {
+    text-align: center;
+}
+
+.tax-consulting-success .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--contrast);
+    margin-bottom: 16px;
+}
+
+.tax-consulting-success .section-subtitle {
+    font-size: 18px;
+    color: var(--contrast-2);
+    margin-bottom: 60px;
+}
+
+.tax-consulting-success .success-carousel {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tax-consulting-success .success-card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.tax-consulting-success .success-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--contrast);
+    margin-bottom: 12px;
+}
+
+.tax-consulting-success .success-subtitle {
+    font-size: 18px;
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+.tax-consulting-success .success-description {
+    font-size: 18px;
+    color: var(--contrast-2);
+    font-style: italic;
+    line-height: 1.6;
+}
+
+/* FAQ Section */
+.tax-consulting-faq {
+    padding: 80px 0;
+    background: white;
+}
+
+.tax-consulting-faq .section-title,
+.tax-consulting-faq .section-subtitle {
+    text-align: center;
+}
+
+.tax-consulting-faq .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--contrast);
+    margin-bottom: 16px;
+}
+
+.tax-consulting-faq .section-subtitle {
+    font-size: 18px;
+    color: var(--contrast-2);
+    margin-bottom: 60px;
+}
+
+.tax-consulting-faq .faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tax-consulting-faq .faq-item {
+    background: var(--base);
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.tax-consulting-faq .faq-question {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--contrast);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.tax-consulting-faq .faq-question .check-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.tax-consulting-faq .faq-answer {
+    font-size: 16px;
+    color: var(--contrast-2);
+    line-height: 1.6;
+}
+
+/* Simulation Section */
+.tax-consulting-simulation {
+    padding: 80px 0;
+}
+
+.tax-consulting-simulation .section-title,
+.tax-consulting-simulation .section-subtitle {
+    text-align: center;
+}
+
+.tax-consulting-simulation .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--contrast);
+    margin-bottom: 16px;
+}
+
+.tax-consulting-simulation .section-subtitle {
+    font-size: 18px;
+    color: var(--contrast-2);
+    margin-bottom: 40px;
+}
+
+.tax-consulting-simulation .table-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--contrast);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.tax-consulting-simulation .table-wrapper {
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+.tax-consulting-simulation .simulation-table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tax-consulting-simulation .simulation-table th {
+    background: var(--accent);
+    color: white;
+    padding: 16px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.tax-consulting-simulation .simulation-table td {
+    padding: 16px;
+    border-bottom: 1px solid var(--contrast-3);
+    font-size: 16px;
+    color: var(--contrast-2);
+}
+
+.tax-consulting-simulation .simulation-table tr:last-child td {
+    border-bottom: none;
+}
+
+.tax-consulting-simulation .simulation-table .highlight {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.tax-consulting-simulation .table-note {
+    text-align: center;
+    font-size: 14px;
+    color: var(--contrast-2);
+    font-style: italic;
+}
+
+/* Differentiators Section */
+.tax-consulting-differentiators {
+    padding: 80px 0;
+    background: white;
+}
+
+.tax-consulting-differentiators .section-title,
+.tax-consulting-differentiators .section-subtitle {
+    text-align: center;
+}
+
+.tax-consulting-differentiators .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--contrast);
+    margin-bottom: 16px;
+}
+
+.tax-consulting-differentiators .section-subtitle {
+    font-size: 18px;
+    color: var(--contrast-2);
+    margin-bottom: 60px;
+}
+
+.tax-consulting-differentiators .differentiators-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.tax-consulting-differentiators .differentiator-card {
+    background: var(--base);
+    padding: 40px 30px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.tax-consulting-differentiators .card-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--contrast);
+    margin-bottom: 30px;
+}
+
+.tax-consulting-differentiators .differentiator-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.tax-consulting-differentiators .differentiator-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: var(--contrast-2);
+}
+
+/* CTA Section */
+.tax-consulting-cta {
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.tax-consulting-cta .cta-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.tax-consulting-cta .cta-background:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.tax-consulting-cta .cta-content {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.tax-consulting-cta .cta-title {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.tax-consulting-cta .cta-subtitle {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 40px;
+}
+
+.tax-consulting-cta .cta-button {
+    display: inline-block;
+    padding: 16px 40px;
+    background-color: var(--accent);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.tax-consulting-cta .cta-button:hover {
+    background-color: #3da8c9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(78, 192, 225, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tax-consulting-hero .hero-title {
+        font-size: 36px;
+    }
+    
+    .tax-consulting-hero .hero-subtitle {
+        font-size: 18px;
+    }
+    
+    .tax-consulting-stats .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    
+    .tax-consulting-core-areas .core-areas-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tax-consulting-services .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tax-consulting-process .process-group {
+        grid-template-columns: 1fr;
+    }
+    
+    .tax-consulting-process .process-arrow {
+        display: none;
+    }
+    
+    .tax-consulting-industry .industry-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tax-consulting-pricing .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tax-consulting-faq .faq-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tax-consulting-differentiators .differentiators-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tax-consulting-simulation .simulation-table {
+        font-size: 14px;
+    }
+    
+    .tax-consulting-simulation .simulation-table th,
+    .tax-consulting-simulation .simulation-table td {
+        padding: 12px 8px;
+    }
+}
+
+/* Background colors */
+.bg-light-gray {
+    background-color: var(--base);
+}
+
+/* Full width section */
+.full-width-section {
+    width: 100%;
+    position: relative;
+}
+
+/* Check icon styles */
+.check-wrapper {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Animation classes */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.stagger-animation {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.stagger-animation.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

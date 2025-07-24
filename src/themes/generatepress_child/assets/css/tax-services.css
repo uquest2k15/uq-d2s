@@ -1,0 +1,887 @@
+/**
+ * Tax Services Page Styles
+ */
+
+/* Hero Section */
+.onfield-tax-hero {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.onfield-tax-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.onfield-tax-hero .grid-container {
+    position: relative;
+    z-index: 2;
+}
+
+.onfield-tax-hero .hero-content {
+    text-align: center;
+    color: var(--base-3);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.onfield-tax-hero .hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.onfield-tax-hero .hero-title-top {
+    color: var(--contrast);
+}
+
+.onfield-tax-hero .hero-title-bottom {
+    color: var(--contrast);
+}
+
+.onfield-tax-hero .accent-text {
+    color: var(--accent);
+}
+
+.onfield-tax-hero .hero-subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: var(--contrast);
+}
+
+.onfield-tax-hero .hero-cta-button {
+    display: inline-block;
+    background-color: var(--accent);
+    color: var(--base-3);
+    padding: 16px 40px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.onfield-tax-hero .hero-cta-button:hover {
+    background-color: #3ca8c9;
+    transform: translateY(-2px);
+}
+
+/* Intro Section */
+.onfield-tax-intro-section {
+    padding: 80px 0;
+}
+
+.onfield-tax-intro-section .intro-text {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--contrast);
+}
+
+.onfield-tax-intro-section .accent-color {
+    color: var(--accent);
+}
+
+/* Stats Section */
+.onfield-tax-stats-section {
+    padding: 100px 0;
+    background-color: var(--base);
+}
+
+.onfield-tax-stats-section .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 16px;
+    color: var(--contrast);
+}
+
+.onfield-tax-stats-section .section-subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--contrast);
+}
+
+.onfield-tax-stats-section .section-description {
+    font-size: 16px;
+    text-align: center;
+    color: var(--contrast-2);
+    margin-bottom: 60px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.onfield-tax-stats-section .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.onfield-tax-stats-section .stat-item {
+    text-align: center;
+    padding: 40px 20px;
+    background: var(--base-3);
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.onfield-tax-stats-section .stat-number {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--accent);
+    display: inline-block;
+}
+
+.onfield-tax-stats-section .stat-label {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--accent);
+    display: inline-block;
+}
+
+.onfield-tax-stats-section .stat-description {
+    font-size: 16px;
+    color: var(--contrast-2);
+    margin-top: 10px;
+}
+
+/* Services Section */
+.onfield-tax-services-section {
+    padding: 100px 0;
+}
+
+.onfield-tax-services-section .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.onfield-tax-services-section .accent-color {
+    color: var(--accent);
+}
+
+.onfield-tax-services-section .section-subtitle {
+    font-size: 20px;
+    text-align: center;
+    color: var(--contrast-2);
+    margin-bottom: 60px;
+}
+
+.onfield-tax-services-section .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.onfield-tax-services-section .service-card {
+    background: var(--base-3);
+    border: 1px solid var(--contrast-3);
+    border-radius: 12px;
+    padding: 40px 30px;
+    transition: all 0.3s ease;
+}
+
+.onfield-tax-services-section .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.onfield-tax-services-section .service-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--contrast);
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.onfield-tax-services-section .service-subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--contrast-2);
+}
+
+.onfield-tax-services-section .service-description {
+    font-size: 16px;
+    color: var(--accent);
+    margin-bottom: 24px;
+}
+
+.onfield-tax-services-section .service-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.onfield-tax-services-section .service-features li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    color: var(--contrast-2);
+    line-height: 1.5;
+}
+
+.onfield-tax-services-section .service-features li::before {
+    content: none !important;
+}
+
+.onfield-tax-services-section .service-features li .check-icon {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+}
+
+/* Service Guide Section */
+.onfield-service-guide-section {
+    padding: 100px 0;
+    background-color: var(--base);
+}
+
+.onfield-service-guide-section .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.onfield-service-guide-section .section-subtitle {
+    font-size: 20px;
+    text-align: center;
+    color: var(--contrast-2);
+    margin-bottom: 60px;
+}
+
+.onfield-service-guide-section .guide-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.onfield-service-guide-section .guide-card {
+    background: var(--base-3);
+    border-radius: 12px;
+    padding: 40px;
+    position: relative;
+    border-left: 4px solid var(--accent);
+}
+
+.onfield-service-guide-section .guide-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--contrast-2);
+    margin-bottom: 16px;
+}
+
+.onfield-service-guide-section .guide-service {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--contrast);
+    margin-bottom: 24px;
+}
+
+.onfield-service-guide-section .guide-benefits {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.onfield-service-guide-section .guide-benefits li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    color: var(--contrast-2);
+}
+
+.onfield-service-guide-section .guide-benefits li::before {
+    content: none !important;
+}
+
+.onfield-service-guide-section .check-icon-wrapper {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.onfield-service-guide-section .circle-icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+.onfield-service-guide-section .check-icon-overlay {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 4px;
+    left: 4px;
+}
+
+/* Process Section */
+.onfield-process-section {
+    padding: 100px 0;
+}
+
+.onfield-process-section .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.onfield-process-section .section-subtitle {
+    font-size: 20px;
+    text-align: center;
+    color: var(--contrast-2);
+    margin-bottom: 60px;
+}
+
+.onfield-process-section .process-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    position: relative;
+}
+
+.onfield-process-section .process-step {
+    background: var(--base);
+    border-radius: 12px;
+    padding: 40px;
+    position: relative;
+}
+
+.onfield-process-section .step-number {
+    position: absolute;
+    top: -20px;
+    left: 40px;
+    background: var(--accent);
+    color: var(--base-3);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.onfield-process-section .step-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--contrast);
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+
+.onfield-process-section .step-subtitle {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--contrast-2);
+    margin-bottom: 20px;
+}
+
+.onfield-process-section .step-details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.onfield-process-section .step-details li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: var(--contrast-2);
+}
+
+.onfield-process-section .step-details li::before {
+    content: none !important;
+}
+
+.onfield-process-section .step-details li .check-icon {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+}
+
+/* Differentiators Section */
+.onfield-differentiators-section {
+    padding: 100px 0;
+    background-color: var(--base);
+}
+
+.onfield-differentiators-section .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.onfield-differentiators-section .section-subtitle {
+    font-size: 20px;
+    text-align: center;
+    color: var(--contrast-2);
+    margin-bottom: 60px;
+}
+
+.onfield-differentiators-section .differentiators-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.onfield-differentiators-section .differentiator-card {
+    background: var(--base-3);
+    border-radius: 12px;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.onfield-differentiators-section .diff-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--contrast);
+    margin-bottom: 24px;
+}
+
+.onfield-differentiators-section .diff-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.onfield-differentiators-section .diff-features li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 16px;
+    font-size: 15px;
+    color: var(--contrast-2);
+    line-height: 1.5;
+}
+
+.onfield-differentiators-section .diff-features li::before {
+    content: none !important;
+}
+
+.onfield-differentiators-section .check-icon-wrapper {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.onfield-differentiators-section .circle-icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+.onfield-differentiators-section .check-icon-overlay {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 4px;
+    left: 4px;
+}
+
+/* Success Stories Section */
+.onfield-success-section {
+    padding: 100px 0;
+}
+
+.onfield-success-section .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.onfield-success-section .section-subtitle {
+    font-size: 20px;
+    text-align: center;
+    color: var(--contrast-2);
+    margin-bottom: 60px;
+}
+
+.onfield-success-section .success-carousel {
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.onfield-success-section .success-card {
+    background: var(--base);
+    border-radius: 12px;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.onfield-success-section .success-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--contrast);
+    margin-bottom: 16px;
+}
+
+.onfield-success-section .success-subtitle {
+    font-size: 18px;
+    color: var(--contrast-2);
+    margin-bottom: 24px;
+}
+
+.onfield-success-section .success-description {
+    font-size: 20px;
+    color: var(--contrast);
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.onfield-success-section .swiper-pagination {
+    position: relative;
+    margin-top: 30px;
+}
+
+.onfield-success-section .swiper-pagination-bullet {
+    background: var(--contrast-3);
+    opacity: 1;
+}
+
+.onfield-success-section .swiper-pagination-bullet-active {
+    background: var(--accent);
+}
+
+.onfield-success-section .success-cta {
+    text-align: center;
+}
+
+.onfield-success-section .success-more-button {
+    display: inline-block;
+    background-color: var(--accent);
+    color: var(--base-3);
+    padding: 14px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.onfield-success-section .success-more-button:hover {
+    background-color: #3ca8c9;
+    transform: translateY(-2px);
+}
+
+/* CTA Section */
+.onfield-tax-cta-section {
+    padding: 100px 0;
+    background-color: var(--base);
+}
+
+.onfield-tax-cta-section .cta-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.onfield-tax-cta-section .cta-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.onfield-tax-cta-section .cta-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--contrast);
+    margin-bottom: 20px;
+}
+
+.onfield-tax-cta-section .cta-description {
+    font-size: 18px;
+    color: var(--contrast-2);
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+.onfield-tax-cta-section .cta-button {
+    display: inline-block;
+    background-color: var(--accent);
+    color: var(--base-3);
+    padding: 16px 40px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.onfield-tax-cta-section .cta-button:hover {
+    background-color: #3ca8c9;
+    transform: translateY(-2px);
+}
+
+/* Full Width Section Utility */
+.full-width-section {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+/* Background Colors */
+.bg-white {
+    background-color: var(--base-3);
+}
+
+.bg-light-gray {
+    background-color: var(--base);
+}
+
+/* Animation Classes */
+@keyframes floatUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.float-up {
+    animation: floatUp 0.8s ease-out forwards;
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+.appear {
+    animation: appear 0.5s ease-out forwards;
+}
+
+/* Animation Triggers */
+.onfield-tax-hero .hero-content,
+.onfield-tax-intro-section .intro-text,
+.onfield-tax-services-section .service-card,
+.onfield-service-guide-section .guide-card,
+.onfield-process-section .process-step,
+.onfield-differentiators-section .differentiator-card,
+.onfield-tax-cta-section .cta-image,
+.onfield-tax-cta-section .cta-text {
+    opacity: 0;
+}
+
+/* Animation for section titles - add animate-ready class via JS */
+.section-title.animate-ready,
+.section-subtitle.animate-ready {
+    opacity: 0;
+}
+
+.hero-content.animated {
+    animation: floatUp 0.8s ease-out forwards;
+}
+
+.intro-text.animated {
+    animation: floatUp 0.8s ease-out forwards;
+    animation-delay: 0.2s;
+}
+
+.section-title.animated,
+.section-subtitle.animated {
+    animation: floatUp 0.6s ease-out forwards;
+}
+
+.service-card.animated {
+    animation: floatUp 0.6s ease-out forwards;
+}
+
+.guide-card.animated {
+    animation: floatUp 0.6s ease-out forwards;
+}
+
+.process-step.animated {
+    animation: appear 0.6s ease-out forwards;
+}
+
+.differentiator-card.animated {
+    animation: appear 0.6s ease-out forwards;
+}
+
+.onfield-tax-cta-section .cta-image {
+    opacity: 0;
+}
+
+.onfield-tax-cta-section .cta-text {
+    opacity: 0;
+}
+
+.cta-image.animated {
+    animation: appear 0.8s ease-out forwards;
+}
+
+.cta-text.animated {
+    animation: floatUp 0.8s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+/* Stagger animations for multiple elements within their parent containers */
+.services-grid .service-card:nth-child(1).animated { animation-delay: 0.1s; }
+.services-grid .service-card:nth-child(2).animated { animation-delay: 0.2s; }
+.services-grid .service-card:nth-child(3).animated { animation-delay: 0.3s; }
+.services-grid .service-card:nth-child(4).animated { animation-delay: 0.4s; }
+.services-grid .service-card:nth-child(5).animated { animation-delay: 0.5s; }
+.services-grid .service-card:nth-child(6).animated { animation-delay: 0.6s; }
+
+.guide-grid .guide-card:nth-child(1).animated { animation-delay: 0.1s; }
+.guide-grid .guide-card:nth-child(2).animated { animation-delay: 0.2s; }
+.guide-grid .guide-card:nth-child(3).animated { animation-delay: 0.3s; }
+.guide-grid .guide-card:nth-child(4).animated { animation-delay: 0.4s; }
+.guide-grid .guide-card:nth-child(5).animated { animation-delay: 0.5s; }
+.guide-grid .guide-card:nth-child(6).animated { animation-delay: 0.6s; }
+
+.process-grid .process-step:nth-child(1).animated { animation-delay: 0s; }
+.process-grid .process-step:nth-child(2).animated { animation-delay: 0.2s; }
+.process-grid .process-step:nth-child(3).animated { animation-delay: 0.4s; }
+.process-grid .process-step:nth-child(4).animated { animation-delay: 0.6s; }
+
+.differentiators-grid .differentiator-card:nth-child(1).animated { animation-delay: 0s; }
+.differentiators-grid .differentiator-card:nth-child(2).animated { animation-delay: 0.2s; }
+.differentiators-grid .differentiator-card:nth-child(3).animated { animation-delay: 0.4s; }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    /* Stats Grid - Tablet */
+    .onfield-tax-stats-section .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Services Grid - Tablet */
+    .onfield-tax-services-section .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Guide Grid - Tablet */
+    .onfield-service-guide-section .guide-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Process Grid - Tablet */
+    .onfield-process-section .process-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* CTA Content - Tablet */
+    .onfield-tax-cta-section .cta-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .onfield-tax-cta-section .cta-image {
+        order: 2;
+    }
+    
+    .onfield-tax-cta-section .cta-text {
+        order: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Hero Section - Mobile */
+    .onfield-tax-hero {
+        min-height: 500px;
+    }
+    
+    .onfield-tax-hero .hero-title {
+        font-size: 36px;
+    }
+    
+    .onfield-tax-hero .hero-subtitle {
+        font-size: 18px;
+    }
+    
+    /* Intro Section - Mobile */
+    .onfield-tax-intro-section .intro-text {
+        font-size: 24px;
+    }
+    
+    /* Stats Grid - Mobile */
+    .onfield-tax-stats-section .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    /* Services Grid - Mobile */
+    .onfield-tax-services-section .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Differentiators Grid - Mobile */
+    .onfield-differentiators-section .differentiators-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Section Titles - Mobile */
+    .section-title {
+        font-size: 28px !important;
+    }
+    
+    .section-subtitle {
+        font-size: 18px !important;
+    }
+    
+    /* Padding Adjustments - Mobile */
+    .full-width-section {
+        padding: 60px 0;
+    }
+}

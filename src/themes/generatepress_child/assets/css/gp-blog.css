@@ -1,0 +1,371 @@
+/*
+ * Onfield - Custom Blog Styles (Updated)
+ * Uses uq-blog-core-cld for post cards and groups
+ * ---------------------------------------
+ */
+
+/* --- General & Helper Classes --- */
+.page-template-default.page-id-266910 .site-main > .entry-title {
+    display: none; /* Hide the default page title like '온필드 아티클' */
+}
+.onfield-blog-index-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.onfield-button {
+    display: inline-block;
+    background-color: #38c5da;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+.onfield-button:hover {
+    background-color: #2baab8;
+    color: #fff;
+}
+
+/* --- 1. Hero Section --- */
+.onfield-hero-section {
+    padding: 60px 0;
+    margin-bottom: 60px;
+}
+.onfield-hero-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.onfield-hero-text {
+    flex: 1;
+}
+.onfield-hero-image {
+    flex: 1;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+}
+.onfield-hero-category {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 8px;
+    display: block;
+}
+.onfield-hero-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 16px;
+    color: #111;
+}
+.onfield-hero-excerpt {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 24px;
+}
+
+/* --- 2. Category Filter Section --- */
+.onfield-category-filter-section {
+    text-align: center;
+    padding: 40px 0;
+    margin-bottom: 60px;
+}
+.onfield-category-filter-section .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.onfield-category-filter-section .section-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+.onfield-category-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.onfield-filter-button {
+    background-color: #f0f7f8;
+    color: #333;
+    padding: 10px 24px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.onfield-filter-button:hover, .onfield-filter-button.active {
+    background-color: #38c5da;
+    color: #fff;
+}
+
+/* --- 3. Category Post List Section --- */
+.onfield-category-list-section {
+    margin-bottom: 80px;
+}
+.onfield-category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 15px;
+}
+.onfield-category-header .category-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+}
+.onfield-category-header .category-more-link {
+    color: #333;
+    transition: color 0.3s ease;
+}
+.onfield-category-header .category-more-link:hover {
+    color: #38c5da;
+}
+
+/* --- Custom styling for uq-blog-core-cld components in category sections --- */
+.onfield-category-posts .uq-post-card {
+    border: 1px solid #e9e9e9;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.onfield-category-posts .uq-post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.07);
+}
+.onfield-category-posts .uq-post-card__image-wrapper {
+    height: 200px;
+}
+.onfield-category-posts .uq-post-card__title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+.onfield-category-posts .uq-post-card__excerpt {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* --- 4. CTA Section --- */
+.onfield-cta-section {
+    background-color: #f0f5ff;
+    border-radius: 12px;
+    padding: 60px 40px;
+    margin-top: 40px;
+    text-align: left;
+}
+.onfield-cta-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+.onfield-cta-text {
+    flex-basis: 50%;
+}
+.onfield-cta-illustration {
+    flex-basis: 45%;
+    text-align: right;
+}
+.onfield-cta-illustration img {
+    max-width: 400px;
+    height: auto;
+}
+.cta-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.cta-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+.onfield-button.cta-button {
+    padding: 15px 40px;
+    font-size: 1.1rem;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 1024px) {
+    .onfield-hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .onfield-hero-image {
+        width: 100%;
+        max-width: 500px;
+        height: 300px;
+        margin-bottom: 30px;
+    }
+    .onfield-hero-title {
+        font-size: 2.4rem;
+    }
+    /* CTA 반응형 스타일 추가 */
+    .onfield-cta-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .onfield-cta-text {
+        order: 1;
+    }
+    .onfield-cta-illustration {
+        order: 2;
+        text-align: center;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .onfield-hero-title {
+        font-size: 2rem;
+    }
+    .onfield-category-header .category-name {
+        font-size: 1.5rem;
+    }
+    .cta-title {
+        font-size: 1.8rem;
+    }
+    .onfield-cta-section {
+        padding: 40px 20px;
+    }
+}
+
+/*
+ * ===========================================
+ * ONFIELD - CUSTOM CATEGORY ARCHIVE PAGE STYLES
+ * ===========================================
+ */
+
+/* --- 1. Custom Full-Width Page Header --- */
+.onfield-archive-header { 
+    background-color: var(--base-3, #ffffff);
+    padding: 60px 0; 
+    margin-bottom: 40px; 
+    border-top: 1px solid var(--contrast-3, #e0e0e0);
+    border-bottom: 1px solid var(--contrast-3, #e0e0e0);
+}
+.onfield-archive-header .grid-container {
+    display: flex;
+    justify-content: center;
+}
+.onfield-archive-header-content { 
+    width: 100%;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 40px; 
+}
+.onfield-archive-header-text { 
+    flex-basis: 55%; 
+    flex-shrink: 1;
+}
+.onfield-archive-title { font-size: 2.5rem; font-weight: 800; margin-bottom: 16px; }
+.onfield-archive-description { font-size: 1rem; line-height: 1.7; color: var(--contrast-2); }
+.onfield-archive-header-image { 
+    flex-basis: 40%;
+    flex-shrink: 0; 
+    text-align: right; 
+}
+.onfield-archive-header-image img { max-width: 280px; height: auto; }
+
+/* --- 2. Custom styling for uq-blog-core-cld components in archive --- */
+.onfield-archive-posts .uq-post-card {
+    background: var(--base-3);
+    border: 1px solid var(--contrast-3, #e0e0e0);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.onfield-archive-posts .uq-post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.07);
+}
+.onfield-archive-posts .uq-post-card__image-wrapper {
+    height: 200px;
+}
+.onfield-archive-posts .uq-post-card__title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.4;
+}
+.onfield-archive-posts .uq-post-card__meta {
+    font-size: 0.9rem;
+    color: var(--contrast-2);
+    margin-top: 10px;
+}
+.onfield-archive-posts .uq-post-card__excerpt {
+    font-size: 0.95rem;
+    color: var(--contrast-2);
+    line-height: 1.6;
+}
+
+/* --- 3. Pagination & CTA --- */
+.paging-navigation { margin-top: 40px; text-align: center; }
+.onfield-archive-cta.onfield-cta-section { 
+    margin-top: 60px;
+    background-color: #f0f5ff; /* A light blue background */
+    text-align: left;
+}
+.onfield-archive-cta .onfield-cta-content {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+.onfield-archive-cta .onfield-cta-text {
+    flex-basis: 50%;
+    order: 1; /* Text on the left */
+}
+.onfield-archive-cta .onfield-cta-illustration {
+    flex-basis: 45%;
+    order: 2; /* Image on the right */
+    text-align: right;
+}
+.onfield-archive-cta .onfield-cta-illustration img {
+    max-width: 400px;
+}
+
+/* --- 5. Custom Sidebar Styling for Block Widgets --- */
+#right-sidebar .wp-block-group { background-color: #f7f8f9; padding: 25px; border-radius: 12px; margin-bottom: 30px; }
+#right-sidebar .wp-block-group .wp-block-heading { font-size: 1.25rem; font-weight: 700; color: var(--contrast); margin-bottom: 20px; display: flex; align-items: center; gap: 8px; }
+#right-sidebar .wp-block-categories-list { list-style: none; margin: 0; padding: 0; }
+#right-sidebar .wp-block-categories-list li { margin-bottom: 10px; }
+#right-sidebar .wp-block-categories-list li a { display: flex; justify-content: space-between; align-items: center; padding: 15px; border-radius: 8px; background-color: var(--base-3); text-decoration: none; font-weight: 500; color: var(--contrast); transition: all 0.2s ease-in-out; }
+#right-sidebar .wp-block-categories-list li.current-cat > a { background-color: #716fff; color: #fff; font-weight: bold; }
+#right-sidebar .wp-block-categories-list li:not(.current-cat) a:hover { transform: translateX(5px); background-color: #eafaff; }
+#right-sidebar .wp-block-categories-list .post-count { background-color: rgba(0,0,0,0.05); padding: 2px 8px; border-radius: 10px; font-size: 0.8em; }
+#right-sidebar .wp-block-categories-list li.current-cat > a .post-count { background-color: rgba(255,255,255,0.2); }
+#right-sidebar .wp-block-tag-cloud { display: flex; flex-wrap: wrap; gap: 10px; padding: 0; }
+#right-sidebar .wp-block-tag-cloud a { background-color: #e9e9e9; color: var(--contrast-2); padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 14px !important; transition: all 0.2s ease-in-out; }
+#right-sidebar .wp-block-tag-cloud a:hover { background-color: var(--accent); color: #fff; }
+#right-sidebar .wp-block-latest-posts { list-style: none; margin: 0; padding: 0; }
+#right-sidebar .wp-block-latest-posts li { margin-bottom: 10px; }
+#right-sidebar .wp-block-latest-posts li a { display: block; padding: 15px; background-color: var(--base-3); border-radius: 8px; text-decoration: none; font-weight: 600; }
+#right-sidebar .wp-block-latest-posts li a:hover { transform: translateX(5px); background-color: #eafaff; }
+#right-sidebar .wp-block-latest-posts__post-date { font-size: 0.85em; color: var(--contrast-2); font-weight: normal; margin-top: 5px; }
+
+/* --- Responsive Design --- */
+@media (max-width: 1024px) { 
+    /* uq-blog-core-cld handles grid responsiveness */
+}
+@media (max-width: 768px) {
+    .onfield-archive-header-content,
+    .onfield-archive-cta .onfield-cta-content { flex-direction: column; text-align: center; }
+    .onfield-archive-header-image { order: 1; text-align: center; margin-bottom: 30px; }
+    .onfield-archive-header-text { order: 2; }
+    .onfield-archive-cta .onfield-cta-text { order: 1; }
+    .onfield-archive-cta .onfield-cta-illustration { order: 2; text-align: center; margin-top: 30px; }
+}

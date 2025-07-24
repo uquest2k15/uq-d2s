@@ -1,0 +1,599 @@
+/**
+ * D2S v1 Common Classes
+ * Design-to-Static System Version 1.0
+ * 
+ * Common CSS classes for D2S generated templates from Figma designs
+ * For use with GeneratePress Theme
+ * 
+ * @version 1.0.0
+ * @since 2024
+ * @system D2S v1
+ */
+
+/* ========================================================================
+   D2S v1 CSS Variables
+   ======================================================================== */
+:root {
+    /* Container Width - Uses GeneratePress Customizer value */
+    --d2s-container-width: var(--container-width, 1200px);
+    
+    /* Spacing System */
+    --d2s-section-padding: 60px;
+    --d2s-section-padding-mobile: 40px;
+    --d2s-content-padding: 40px;
+    --d2s-content-padding-mobile: 20px;
+    --d2s-element-gap: 30px;
+    --d2s-element-gap-mobile: 20px;
+    
+    /* Color Palette - Using GeneratePress Global Colors */
+    --d2s-hero-overlay: rgba(0, 0, 0, 0.4);
+    --d2s-section-white: var(--base-3, #ffffff);
+    --d2s-section-light-gray: var(--base-2, #f7f8f9);
+    --d2s-section-gray: var(--base, #e8e8e8);
+    --d2s-section-dark: var(--contrast, #1a1a1a);
+    --d2s-text-dark: var(--contrast, #333333);
+    --d2s-text-light: var(--base-3, #ffffff);
+    
+    /* Typography Scale */
+    --d2s-hero-title-size: 3em;
+    --d2s-hero-title-size-mobile: 2em;
+    --d2s-section-heading-size: 2.5em;
+    --d2s-section-heading-size-mobile: 1.8em;
+    --d2s-subheading-size: 1.8em;
+    --d2s-subheading-size-mobile: 1.4em;
+}
+
+/* ========================================================================
+   D2S v1 Base Overrides
+   ======================================================================== */
+   
+/* Remove GeneratePress default spacing for D2S templates */
+.d2s-v1-template .inside-article {
+    padding: 0;
+}
+
+/* Hide default entry header in D2S templates */
+.d2s-v1-template .entry-header {
+    display: none;
+}
+
+/* ========================================================================
+   D2S v1 Hero Section
+   ======================================================================== */
+.d2s-hero {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+/* Hero Overlay */
+.d2s-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--d2s-hero-overlay);
+    z-index: 1;
+}
+
+/* Hero Modifiers */
+.d2s-hero.no-overlay::before {
+    display: none;
+}
+
+.d2s-hero.hero-tall {
+    min-height: 600px;
+}
+
+.d2s-hero.hero-short {
+    min-height: 300px;
+}
+
+/* Hero Content Container */
+.d2s-hero-content {
+    max-width: var(--d2s-container-width);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 var(--d2s-content-padding);
+    text-align: center;
+    color: var(--d2s-text-light);
+    position: relative;
+    z-index: 2;
+}
+
+/* Hero Typography */
+.d2s-hero-title {
+    font-size: var(--d2s-hero-title-size);
+    margin: 0 0 0.5em 0;
+    font-weight: 700;
+    line-height: 1.2;
+    color: inherit;
+}
+
+.d2s-hero-subtitle {
+    font-size: 1.25em;
+    margin: 0;
+    opacity: 0.9;
+    line-height: 1.5;
+    color: inherit;
+}
+
+/* Hero Alignment Variations */
+.d2s-hero.text-left .d2s-hero-content {
+    text-align: left;
+}
+
+.d2s-hero.text-right .d2s-hero-content {
+    text-align: right;
+}
+
+/* ========================================================================
+   D2S v1 Section System
+   ======================================================================== */
+.d2s-section {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: var(--d2s-section-padding) 0;
+}
+
+/* Section Background Colors - Using GeneratePress Global Colors */
+.d2s-section.bg-white {
+    background-color: var(--base-3, #ffffff);
+    color: var(--contrast, #333333);
+}
+
+.d2s-section.bg-light-gray {
+    background-color: var(--base-2, #f7f8f9);
+    color: var(--contrast, #333333);
+}
+
+.d2s-section.bg-gray {
+    background-color: var(--base, #e8e8e8);
+    color: var(--contrast, #333333);
+}
+
+.d2s-section.bg-dark {
+    background-color: var(--contrast, #1a1a1a);
+    color: var(--base-3, #ffffff);
+}
+
+/* Semantic aliases for GeneratePress colors */
+.d2s-section.bg-base-3 {
+    background-color: var(--base-3, #ffffff);
+    color: var(--contrast, #333333);
+}
+
+.d2s-section.bg-base-2 {
+    background-color: var(--base-2, #f7f8f9);
+    color: var(--contrast, #333333);
+}
+
+.d2s-section.bg-base {
+    background-color: var(--base, #e8e8e8);
+    color: var(--contrast, #333333);
+}
+
+.d2s-section.bg-contrast {
+    background-color: var(--contrast, #1a1a1a);
+    color: var(--base-3, #ffffff);
+}
+
+/* Dark Section Typography */
+.d2s-section.bg-dark h1,
+.d2s-section.bg-dark h2,
+.d2s-section.bg-dark h3,
+.d2s-section.bg-dark h4,
+.d2s-section.bg-dark h5,
+.d2s-section.bg-dark h6,
+.d2s-section.bg-contrast h1,
+.d2s-section.bg-contrast h2,
+.d2s-section.bg-contrast h3,
+.d2s-section.bg-contrast h4,
+.d2s-section.bg-contrast h5,
+.d2s-section.bg-contrast h6 {
+    color: var(--base-3, #ffffff);
+}
+
+.d2s-section.bg-dark a,
+.d2s-section.bg-contrast a {
+    color: var(--accent, #4da6ff);
+}
+
+.d2s-section.bg-dark a:hover,
+.d2s-section.bg-contrast a:hover {
+    color: var(--accent-hover, #80bfff);
+}
+
+/* Section Content Container */
+.d2s-container {
+    max-width: var(--d2s-container-width);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 var(--d2s-content-padding);
+}
+
+/* Section Spacing Modifiers */
+.d2s-section.section-large {
+    padding: calc(var(--d2s-section-padding) * 1.5) 0;
+}
+
+.d2s-section.section-small {
+    padding: calc(var(--d2s-section-padding) * 0.5) 0;
+}
+
+.d2s-section.section-no-padding {
+    padding: 0;
+}
+
+.d2s-section.section-no-top {
+    padding-top: 0;
+}
+
+.d2s-section.section-no-bottom {
+    padding-bottom: 0;
+}
+
+/* ========================================================================
+   D2S v1 Grid System
+   ======================================================================== */
+   
+/* Base Grid */
+.d2s-grid {
+    display: grid;
+    gap: var(--d2s-element-gap);
+}
+
+/* 2 Column Grid */
+.d2s-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* 3 Column Grid */
+.d2s-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* 4 Column Grid */
+.d2s-grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Asymmetric 2 Column Grids */
+.d2s-grid-2.grid-40-60 {
+    grid-template-columns: 2fr 3fr;
+}
+
+.d2s-grid-2.grid-60-40 {
+    grid-template-columns: 3fr 2fr;
+}
+
+.d2s-grid-2.grid-30-70 {
+    grid-template-columns: 3fr 7fr;
+}
+
+.d2s-grid-2.grid-70-30 {
+    grid-template-columns: 7fr 3fr;
+}
+
+/* Grid Alignment */
+.d2s-grid.v-center {
+    align-items: center;
+}
+
+.d2s-grid.v-start {
+    align-items: start;
+}
+
+.d2s-grid.v-end {
+    align-items: end;
+}
+
+/* ========================================================================
+   D2S v1 Components
+   ======================================================================== */
+
+/* Feature Box */
+.d2s-feature-box {
+    text-align: center;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.02);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+/* Feature box on colored backgrounds */
+.bg-light-gray .d2s-feature-box,
+.bg-base-2 .d2s-feature-box {
+    background: var(--base-3, #ffffff);
+}
+
+.bg-gray .d2s-feature-box,
+.bg-base .d2s-feature-box {
+    background: var(--base-2, #f7f8f9);
+}
+
+.d2s-feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon Box */
+.d2s-icon-box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.d2s-icon-box .icon {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    color: var(--accent, #0073aa);
+    display: block;
+}
+
+/* CTA Box */
+.d2s-cta-box {
+    text-align: center;
+    padding: 60px 40px;
+    background: rgba(0, 0, 0, 0.02);
+    border-radius: 8px;
+}
+
+.d2s-section.bg-dark .d2s-cta-box,
+.d2s-section.bg-contrast .d2s-cta-box {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Card Component */
+.d2s-card {
+    background: var(--base-3, #ffffff);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.d2s-card:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Group */
+.d2s-button-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.d2s-button-group.align-left {
+    justify-content: flex-start;
+}
+
+.d2s-button-group.align-right {
+    justify-content: flex-end;
+}
+
+/* ========================================================================
+   D2S v1 Typography
+   ======================================================================== */
+
+/* Section Headings */
+.d2s-heading {
+    font-size: var(--d2s-section-heading-size);
+    margin: 0 0 0.8em 0;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.d2s-subheading {
+    font-size: var(--d2s-subheading-size);
+    margin: 0 0 0.6em 0;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+/* Text Styles */
+.d2s-lead {
+    font-size: 1.25em;
+    line-height: 1.6;
+    opacity: 0.8;
+    margin-bottom: 1.5em;
+}
+
+.d2s-text-large {
+    font-size: 1.125em;
+    line-height: 1.7;
+}
+
+/* Alignment Classes */
+.d2s-text-center {
+    text-align: center;
+}
+
+.d2s-text-left {
+    text-align: left;
+}
+
+.d2s-text-right {
+    text-align: right;
+}
+
+/* ========================================================================
+   D2S v1 Utility Classes
+   ======================================================================== */
+
+/* Spacing Utilities */
+.d2s-mt-0 { margin-top: 0 !important; }
+.d2s-mb-0 { margin-bottom: 0 !important; }
+.d2s-mt-20 { margin-top: 20px; }
+.d2s-mb-20 { margin-bottom: 20px; }
+.d2s-mt-40 { margin-top: 40px; }
+.d2s-mb-40 { margin-bottom: 40px; }
+.d2s-mt-60 { margin-top: 60px; }
+.d2s-mb-60 { margin-bottom: 60px; }
+
+/* Max Width Utilities */
+.d2s-max-600 {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.d2s-max-800 {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.d2s-max-1000 {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Display Utilities */
+.d2s-hide-mobile {
+    display: block;
+}
+
+.d2s-show-mobile {
+    display: none;
+}
+
+/* ========================================================================
+   D2S v1 Responsive Design
+   ======================================================================== */
+
+/* Tablet - 1024px */
+@media (max-width: 1024px) {
+    :root {
+        --d2s-hero-title-size: 2.5em;
+        --d2s-section-heading-size: 2em;
+    }
+    
+    .d2s-grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile - 768px */
+@media (max-width: 768px) {
+    /* Update Variables */
+    :root {
+        --d2s-section-padding: var(--d2s-section-padding-mobile);
+        --d2s-content-padding: var(--d2s-content-padding-mobile);
+        --d2s-element-gap: var(--d2s-element-gap-mobile);
+        --d2s-hero-title-size: var(--d2s-hero-title-size-mobile);
+        --d2s-section-heading-size: var(--d2s-section-heading-size-mobile);
+        --d2s-subheading-size: var(--d2s-subheading-size-mobile);
+    }
+    
+    /* Hero Adjustments */
+    .d2s-hero {
+        min-height: 300px;
+    }
+    
+    .d2s-hero.hero-tall {
+        min-height: 400px;
+    }
+    
+    /* Grid System - All to Single Column */
+    .d2s-grid-2,
+    .d2s-grid-3,
+    .d2s-grid-4,
+    .d2s-grid-2.grid-40-60,
+    .d2s-grid-2.grid-60-40,
+    .d2s-grid-2.grid-30-70,
+    .d2s-grid-2.grid-70-30 {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Typography */
+    .d2s-lead {
+        font-size: 1.1em;
+    }
+    
+    /* Components */
+    .d2s-button-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .d2s-button-group.align-left,
+    .d2s-button-group.align-right {
+        align-items: stretch;
+    }
+    
+    .d2s-cta-box {
+        padding: 40px 20px;
+    }
+    
+    /* Text Alignment */
+    .d2s-text-center-mobile {
+        text-align: center;
+    }
+    
+    /* Display Utilities */
+    .d2s-hide-mobile {
+        display: none;
+    }
+    
+    .d2s-show-mobile {
+        display: block;
+    }
+}
+
+/* Small Mobile - 480px */
+@media (max-width: 480px) {
+    :root {
+        --d2s-hero-title-size: 1.75em;
+        --d2s-section-padding: 30px;
+    }
+    
+    .d2s-section.section-large {
+        padding: 45px 0;
+    }
+    
+    .d2s-feature-box,
+    .d2s-card {
+        padding: 20px;
+    }
+}
+
+/* ========================================================================
+   D2S v1 Print Styles
+   ======================================================================== */
+@media print {
+    .d2s-hero {
+        min-height: auto;
+        padding: 40px 0;
+    }
+    
+    .d2s-section {
+        width: 100%;
+        position: static;
+        left: auto;
+        right: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

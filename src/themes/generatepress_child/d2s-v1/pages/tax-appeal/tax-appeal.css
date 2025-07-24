@@ -1,0 +1,654 @@
+/**
+ * Tax Appeal Page Styles
+ * D2S v1 Page-specific CSS
+ */
+
+/* Stats Section */
+.tax-appeal-stat {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.tax-appeal-stat__number {
+    font-size: 64px;
+    color: var(--accent);
+}
+
+.tax-appeal-stat__unit {
+    font-size: 32px;
+    color: var(--contrast);
+    margin-left: 5px;
+}
+
+.tax-appeal-stat__title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--contrast);
+    margin-bottom: 10px;
+}
+
+.tax-appeal-stat__desc {
+    font-size: 16px;
+    color: var(--contrast-2);
+    line-height: 1.5;
+}
+
+/* Strategy Cards */
+.tax-appeal-strategy {
+    padding: 40px 30px;
+    height: 100%;
+}
+
+.tax-appeal-strategy__step {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--base-3);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.tax-appeal-strategy__title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--contrast);
+    margin-bottom: 10px;
+}
+
+.tax-appeal-strategy__subtitle {
+    font-size: 16px;
+    color: var(--contrast-2);
+    margin-bottom: 30px;
+}
+
+/* Lists */
+.tax-appeal-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tax-appeal-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.tax-appeal-list img {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* Outlined List Variation */
+.tax-appeal-list--outlined .tax-appeal-list__icon {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.tax-appeal-list--outlined .circle {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 0;
+}
+
+.tax-appeal-list--outlined .check {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 5px;
+    left: 5px;
+}
+
+/* Case Section */
+.tax-appeal-case {
+    padding: 40px;
+    height: 100%;
+}
+
+.tax-appeal-case__title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--contrast);
+    margin-bottom: 30px;
+}
+
+.tax-appeal-case__example,
+.tax-appeal-case__strategy {
+    margin-bottom: 30px;
+}
+
+.tax-appeal-case__example h4,
+.tax-appeal-case__strategy h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 15px;
+}
+
+.tax-appeal-case__example p {
+    font-size: 16px;
+    color: var(--contrast-2);
+    line-height: 1.6;
+}
+
+/* Process Section */
+.tax-appeal-process {
+    padding: 20px;
+}
+
+.tax-appeal-process__item {
+    padding: 30px;
+    background: var(--base-3);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    position: relative;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+}
+
+.tax-appeal-process__item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.tax-appeal-process__number {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--base-3);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.tax-appeal-process__title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--contrast);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.tax-appeal-process__title img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.tax-appeal-process__desc {
+    font-size: 16px;
+    color: var(--contrast-2);
+    line-height: 1.6;
+}
+
+/* Pricing Cards */
+.tax-appeal-pricing {
+    padding: 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.tax-appeal-pricing--featured {
+    border: 2px solid var(--accent);
+}
+
+.tax-appeal-pricing__badge {
+    position: absolute;
+    top: -15px;
+    right: 30px;
+    background: var(--accent);
+    color: var(--base-3);
+    padding: 5px 20px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.tax-appeal-pricing__title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--contrast);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.tax-appeal-pricing__amount {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tax-appeal-pricing__amount .price {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.tax-appeal-pricing__amount .unit {
+    font-size: 20px;
+    color: var(--contrast-2);
+}
+
+.tax-appeal-pricing__desc {
+    text-align: center;
+    font-size: 16px;
+    color: var(--contrast-2);
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--contrast-3);
+}
+
+/* Testimonial Carousel */
+.tax-appeal-testimonials {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tax-appeal-carousel {
+    position: relative;
+    padding: 0 50px;
+}
+
+.tax-appeal-testimonial {
+    background: var(--base-3);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.14);
+    text-align: center;
+}
+
+.tax-appeal-testimonial__title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--contrast);
+    margin-bottom: 10px;
+}
+
+.tax-appeal-testimonial__author {
+    font-size: 16px;
+    color: var(--contrast-2);
+    margin-bottom: 20px;
+}
+
+.tax-appeal-testimonial__content {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--contrast);
+    font-style: italic;
+}
+
+/* FAQ Section */
+.tax-appeal-faq {
+    background: var(--base-3);
+    padding: 40px;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.tax-appeal-faq__question {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--contrast);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.tax-appeal-faq__question img {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.tax-appeal-faq__answer {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--contrast-2);
+}
+
+/* Diagnosis Table */
+.tax-appeal-diagnosis {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tax-appeal-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.tax-appeal-table {
+    width: 100%;
+    background: var(--base-3);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.08);
+}
+
+.tax-appeal-table th {
+    background: var(--accent);
+    color: var(--base-3);
+    padding: 20px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.tax-appeal-table td {
+    padding: 20px;
+    border-bottom: 1px solid var(--contrast-3);
+    font-size: 16px;
+}
+
+.tax-appeal-table tr:last-child td {
+    border-bottom: none;
+}
+
+.tax-appeal-table td:first-child {
+    font-weight: 600;
+    background: var(--base-2);
+}
+
+.tax-appeal-table .high {
+    color: #27AE60;
+    font-weight: 600;
+}
+
+.tax-appeal-table .medium {
+    color: #F39C12;
+    font-weight: 600;
+}
+
+.tax-appeal-table .low {
+    color: #E74C3C;
+    font-weight: 600;
+}
+
+/* Difference Section */
+.tax-appeal-difference {
+    text-align: center;
+    padding: 40px 30px;
+}
+
+.tax-appeal-difference__icon {
+    width: 80px;
+    height: 80px;
+    background: var(--accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 30px;
+    font-size: 36px;
+    color: var(--base-3);
+}
+
+.tax-appeal-difference__title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--contrast);
+    margin-bottom: 30px;
+}
+
+/* Start Section */
+.tax-appeal-start {
+    padding: 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.tax-appeal-start--featured {
+    border: 2px solid var(--accent);
+}
+
+.tax-appeal-start__icon {
+    width: 80px;
+    height: 80px;
+    background: var(--base-2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 30px;
+    font-size: 36px;
+    color: var(--accent);
+}
+
+.tax-appeal-start__title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--contrast);
+    margin-bottom: 15px;
+}
+
+.tax-appeal-start__desc {
+    font-size: 16px;
+    color: var(--contrast-2);
+    margin-bottom: 30px;
+}
+
+.tax-appeal-start__cta {
+    margin-top: auto;
+    padding-top: 30px;
+}
+
+/* CTA Section */
+.tax-appeal-cta__content {
+    padding-right: 60px;
+}
+
+.tax-appeal-cta__image {
+    text-align: center;
+}
+
+.tax-appeal-cta__image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Swiper Customization */
+.tax-appeal-carousel .swiper-button-prev,
+.tax-appeal-carousel .swiper-button-next {
+    color: var(--accent);
+    width: 40px;
+    height: 40px;
+}
+
+.tax-appeal-carousel .swiper-button-prev:after,
+.tax-appeal-carousel .swiper-button-next:after {
+    font-size: 20px;
+}
+
+.tax-appeal-carousel .swiper-pagination-bullet {
+    background: var(--contrast-3);
+    opacity: 1;
+}
+
+.tax-appeal-carousel .swiper-pagination-bullet-active {
+    background: var(--accent);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    /* Stats */
+    .tax-appeal-stat__number {
+        font-size: 48px;
+    }
+    
+    .tax-appeal-stat__unit {
+        font-size: 24px;
+    }
+    
+    .tax-appeal-stat__title {
+        font-size: 20px;
+    }
+    
+    /* Strategy Cards */
+    .tax-appeal-strategy {
+        padding: 30px 20px;
+    }
+    
+    .tax-appeal-strategy__title {
+        font-size: 20px;
+    }
+    
+    /* Case Section */
+    .tax-appeal-case {
+        padding: 30px 20px;
+    }
+    
+    .tax-appeal-case__title {
+        font-size: 20px;
+    }
+    
+    /* Process */
+    .tax-appeal-process__item {
+        padding: 20px;
+    }
+    
+    .tax-appeal-process__title {
+        font-size: 18px;
+    }
+    
+    /* Pricing */
+    .tax-appeal-pricing {
+        padding: 30px 20px;
+    }
+    
+    .tax-appeal-pricing__title {
+        font-size: 20px;
+    }
+    
+    .tax-appeal-pricing__amount .price {
+        font-size: 36px;
+    }
+    
+    /* Testimonial */
+    .tax-appeal-carousel {
+        padding: 0;
+    }
+    
+    .tax-appeal-testimonial {
+        padding: 30px 20px;
+    }
+    
+    .tax-appeal-testimonial__title {
+        font-size: 20px;
+    }
+    
+    .tax-appeal-testimonial__content {
+        font-size: 16px;
+    }
+    
+    /* FAQ */
+    .tax-appeal-faq {
+        padding: 30px 20px;
+    }
+    
+    .tax-appeal-faq__question {
+        font-size: 18px;
+    }
+    
+    /* Table */
+    .tax-appeal-table {
+        min-width: 600px;
+    }
+    
+    .tax-appeal-table th,
+    .tax-appeal-table td {
+        padding: 15px 10px;
+        font-size: 14px;
+    }
+    
+    /* Difference */
+    .tax-appeal-difference {
+        padding: 30px 20px;
+    }
+    
+    .tax-appeal-difference__icon {
+        width: 60px;
+        height: 60px;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    
+    .tax-appeal-difference__title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    /* Start Section */
+    .tax-appeal-start {
+        padding: 30px 20px;
+    }
+    
+    .tax-appeal-start__icon {
+        width: 60px;
+        height: 60px;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    
+    .tax-appeal-start__title {
+        font-size: 20px;
+    }
+    
+    /* CTA */
+    .tax-appeal-cta__content {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+}
+
+/* Animations */
+[data-animation] {
+    opacity: 0;
+}
+
+[data-animation="fadeInUp"] {
+    transform: translateY(30px);
+}
+
+[data-animation="appear"] {
+    transform: scale(0.9);
+}
+
+[data-animation].animated {
+    opacity: 1;
+    transform: none;
+    transition: all 0.6s ease-out;
+}
+
+[data-animation="appear"].animated {
+    transform: scale(1);
+}
+
+/* Counter Animation */
+[data-counter="true"] .tax-appeal-stat__number {
+    transition: all 0.5s ease-out;
+}

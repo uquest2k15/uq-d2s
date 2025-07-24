@@ -1,0 +1,353 @@
+/**
+ * Request Consulting - D2S v1 Custom Styles
+ * Version: 1.0.0
+ */
+
+/* Page-specific modifications only */
+.page-template-templates-page-request-consulting {
+    /* Custom styles here */
+}
+
+/* Hero Section */
+.page-template-templates-page-request-consulting .d2s-hero {
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.page-template-templates-page-request-consulting .d2s-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.85);
+}
+
+.page-template-templates-page-request-consulting .d2s-hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 165px 0 125px;
+    max-width: 650px;
+}
+
+.page-template-templates-page-request-consulting .d2s-hero-title {
+    font-size: 48px;
+    line-height: 1.25;
+    margin-bottom: 30px;
+}
+
+.page-template-templates-page-request-consulting .d2s-hero-subtitle {
+    font-size: 22px;
+    line-height: 1.5;
+    color: var(--contrast);
+    margin-bottom: 50px;
+}
+
+/* Text color classes */
+.page-template-templates-page-request-consulting .text-accent {
+    color: var(--accent);
+}
+
+/* Quick Consultation Box */
+.page-template-templates-page-request-consulting .quick-consultation-box {
+    padding: 80px 0;
+}
+
+.page-template-templates-page-request-consulting .quick-consultation-box .d2s-heading {
+    margin-bottom: 40px;
+}
+
+.page-template-templates-page-request-consulting .phone-number {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.page-template-templates-page-request-consulting .phone-cta {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: var(--contrast);
+}
+
+.page-template-templates-page-request-consulting .business-hours {
+    font-size: 20px;
+    color: var(--contrast-2);
+}
+
+/* Form Section */
+.page-template-templates-page-request-consulting .form-header {
+    margin-bottom: 60px;
+}
+
+.page-template-templates-page-request-consulting .gravity-form-container,
+.page-template-templates-page-request-consulting .static-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Static Form Styles */
+.page-template-templates-page-request-consulting .consultation-form {
+    margin-top: 40px;
+}
+
+.page-template-templates-page-request-consulting .form-section {
+    margin-bottom: 60px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--contrast-3);
+}
+
+.page-template-templates-page-request-consulting .form-section:last-of-type {
+    border-bottom: none;
+}
+
+.page-template-templates-page-request-consulting .form-section-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: var(--contrast);
+}
+
+.page-template-templates-page-request-consulting .form-group {
+    margin-bottom: 30px;
+}
+
+.page-template-templates-page-request-consulting .form-group label {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: var(--contrast);
+}
+
+.page-template-templates-page-request-consulting .required {
+    color: #ff0000;
+    font-size: 16px;
+}
+
+.page-template-templates-page-request-consulting .optional {
+    color: var(--contrast-2);
+    font-size: 16px;
+}
+
+.page-template-templates-page-request-consulting input[type="text"],
+.page-template-templates-page-request-consulting input[type="email"],
+.page-template-templates-page-request-consulting input[type="tel"],
+.page-template-templates-page-request-consulting select,
+.page-template-templates-page-request-consulting textarea {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 18px;
+    border: 1px solid var(--contrast-3);
+    border-radius: 4px;
+    background-color: var(--base-3);
+    transition: border-color 0.3s ease;
+}
+
+.page-template-templates-page-request-consulting input[type="text"]:focus,
+.page-template-templates-page-request-consulting input[type="email"]:focus,
+.page-template-templates-page-request-consulting input[type="tel"]:focus,
+.page-template-templates-page-request-consulting select:focus,
+.page-template-templates-page-request-consulting textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+.page-template-templates-page-request-consulting select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="8"><path d="M1 1l5 5 5-5" stroke="%23000" stroke-width="2" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    padding-right: 50px;
+}
+
+.page-template-templates-page-request-consulting textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Checkbox Styles */
+.page-template-templates-page-request-consulting .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.page-template-templates-page-request-consulting .checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    font-size: 18px;
+    color: var(--contrast);
+    cursor: pointer;
+}
+
+.page-template-templates-page-request-consulting .checkbox-label input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    margin-top: 2px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.page-template-templates-page-request-consulting .checkbox-label span {
+    line-height: 1.5;
+}
+
+/* Privacy Policy Box */
+.page-template-templates-page-request-consulting .privacy-policy-box {
+    background-color: var(--base-2);
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.page-template-templates-page-request-consulting .privacy-policy-box p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--contrast-2);
+    margin-bottom: 15px;
+}
+
+.page-template-templates-page-request-consulting .privacy-policy-box p:last-child {
+    margin-bottom: 0;
+}
+
+/* Submit Button */
+.page-template-templates-page-request-consulting .form-submit {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.page-template-templates-page-request-consulting .button-large {
+    padding: 20px 60px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: var(--accent);
+    color: var(--base-3);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.page-template-templates-page-request-consulting .button-large:hover {
+    background-color: #3da8c9;
+    transform: translateY(-2px);
+}
+
+/* Animation Classes */
+.page-template-templates-page-request-consulting .animate-float-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: floatUp 0.8s ease-out forwards;
+}
+
+@keyframes floatUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Stagger animation delay for sections */
+.page-template-templates-page-request-consulting .d2s-section:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.page-template-templates-page-request-consulting .d2s-section:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+/* GravityForms Overrides */
+.page-template-templates-page-request-consulting .gform_wrapper {
+    margin: 0;
+}
+
+.page-template-templates-page-request-consulting .gform_wrapper .gfield_label {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--contrast);
+}
+
+.page-template-templates-page-request-consulting .gform_wrapper .gfield_required {
+    color: #ff0000;
+}
+
+.page-template-templates-page-request-consulting .gform_wrapper input[type="text"],
+.page-template-templates-page-request-consulting .gform_wrapper input[type="email"],
+.page-template-templates-page-request-consulting .gform_wrapper input[type="tel"],
+.page-template-templates-page-request-consulting .gform_wrapper select,
+.page-template-templates-page-request-consulting .gform_wrapper textarea {
+    padding: 15px 20px;
+    font-size: 18px;
+    border: 1px solid var(--contrast-3);
+    border-radius: 4px;
+}
+
+.page-template-templates-page-request-consulting .gform_wrapper .gform_footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.page-template-templates-page-request-consulting .gform_wrapper .gform_button {
+    padding: 20px 60px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: var(--accent);
+    color: var(--base-3);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .page-template-templates-page-request-consulting .d2s-hero-content {
+        padding: 100px 20px 80px;
+    }
+    
+    .page-template-templates-page-request-consulting .d2s-hero-title {
+        font-size: 36px;
+    }
+    
+    .page-template-templates-page-request-consulting .d2s-hero-subtitle {
+        font-size: 18px;
+    }
+    
+    .page-template-templates-page-request-consulting .phone-number {
+        font-size: 36px;
+    }
+    
+    .page-template-templates-page-request-consulting .phone-cta {
+        font-size: 20px;
+    }
+    
+    .page-template-templates-page-request-consulting .business-hours {
+        font-size: 18px;
+    }
+    
+    .page-template-templates-page-request-consulting input[type="text"],
+    .page-template-templates-page-request-consulting input[type="email"],
+    .page-template-templates-page-request-consulting input[type="tel"],
+    .page-template-templates-page-request-consulting select,
+    .page-template-templates-page-request-consulting textarea {
+        font-size: 16px;
+    }
+    
+    .page-template-templates-page-request-consulting .checkbox-label {
+        font-size: 16px;
+    }
+    
+    .page-template-templates-page-request-consulting .button-large {
+        padding: 15px 40px;
+        font-size: 18px;
+    }
+}
