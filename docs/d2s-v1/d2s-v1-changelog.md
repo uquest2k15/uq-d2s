@@ -1,5 +1,81 @@
 # D2S v1 Changelog
 
+## [1.3.0] - 2025-07-26
+
+### 🔄 Changed - Layout System Integration
+- **Major Update**: Integration with OnField Layout System v2
+  - D2S v1 templates now use the unified OnField layout system
+  - Removed manual width calculations from d2s-container
+  - Adopted content-default and content-narrow classes
+
+### 🚀 Implementation Changes
+- **CSS Updates**:
+  - `d2s-v1-common.css`: Removed full-width CSS from d2s-hero and d2s-section
+  - `d2s-onfield-overrides.css`: Completely refactored for layout system compatibility
+  - Full-width sections now use `onfield-full-width` class
+  - Content width handled by `content-default` and `content-narrow` classes
+
+- **Template Structure**:
+  ```html
+  <!-- Old -->
+  <section class="d2s-section">
+      <div class="d2s-container">
+  
+  <!-- New -->
+  <section class="d2s-section onfield-full-width">
+      <div class="d2s-container content-default">
+  ```
+
+### 📚 Benefits
+- **Consistency**: All templates use the same responsive breakpoints
+- **Maintainability**: Single source of truth for layout widths
+- **Flexibility**: Easy to switch between default and narrow content widths
+- **Performance**: Reduced CSS duplication and conflicts
+
+### 🔧 Migration Guide
+- Add `onfield-full-width` to sections needing full viewport width
+- Add `content-default` or `content-narrow` to content containers
+- Remove any custom width calculations from page-specific CSS
+
+### 📄 Documentation
+- Created `child-theme/docs/d2s-layout-integration.md` guide
+- Updated integration examples in OnField child theme
+
+---
+
+## [1.2.0] - 2025-07-25
+
+### 🔄 Changed - Site-specific Layout Override System
+- **New Feature**: Site-specific layout override system
+  - D2S v1 now supports flexible layout customization per site
+  - Each site can create its own override CSS file
+  - Example: OnField uses `d2s-onfield-overrides.css`
+
+### 🚀 Implementation
+- **Override CSS Loading**:
+  - Site-specific CSS loaded after D2S common CSS
+  - Uses `!important` to ensure overrides take effect
+  - Loaded through `gp-d2s-v1.php` integration file
+
+- **Benefits**:
+  - D2S v1 remains reusable across multiple sites
+  - Site-specific rules don't affect core system
+  - Easy maintenance and updates
+
+### 📚 Example
+```css
+/* d2s-onfield-overrides.css */
+.d2s-container {
+    width: calc(100vw - 480px) !important; /* Site-specific margins */
+}
+```
+
+### 🔧 Files Added
+- `/assets/css/d2s-onfield-overrides.css` - OnField specific layout rules
+- Updated `/includes/gp-d2s-v1.php` to load override CSS
+
+---
+
 ## [1.1.0] - 2025-01-18
 
 ### 🔄 Changed - Architecture Improvements
@@ -136,6 +212,6 @@ When D2S v2 is released:
 
 ---
 
-**Current Version**: 1.1.0  
-**Release Date**: 2025-01-18  
+**Current Version**: 1.3.0  
+**Release Date**: 2025-07-26  
 **Status**: Stable

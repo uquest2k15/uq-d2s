@@ -70,7 +70,26 @@
   - [x] Update All documentation
 - **Completed**: 2025-01-18 (v1.1.0) - 문서에 이미지 폴더 위치 명확히 추가
 
-
+### 🟢 [ARCH-005] Site-specific Layout Override System
+- **Status**: ✅ Completed
+- **Problem**: D2S v1은 여러 사이트에서 재사용되는 시스템인데, 각 사이트의 레이아웃 규칙이 다름
+- **Solution**: 사이트별 오버라이드 CSS 파일을 통한 유연한 레이아웃 적용
+- **Implementation**:
+  - D2S v1 common CSS는 기본 레이아웃 유지
+  - 각 사이트는 자체 오버라이드 CSS 파일 생성
+  - 예: OnField는 `d2s-onfield-overrides.css`로 240px 마진 적용
+- **Benefits**:
+  - D2S v1 재사용성 유지
+  - 사이트별 커스터마이징 용이
+  - D2S 업데이트 시 사이트 규칙 보존
+- **Example**:
+  ```css
+  /* d2s-onfield-overrides.css */
+  .d2s-container {
+      width: calc(100vw - 480px) !important; /* 240px * 2 */
+  }
+  ```
+- **Completed**: 2025-07-25 (v1.2.0)
 
 
 
