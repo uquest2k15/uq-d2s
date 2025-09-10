@@ -10,9 +10,9 @@
 
 include('includes/gp-customize.php');
 include('includes/gp-blog.php');                  // GeneratePress Blog 모듈
-include('includes/gp-d2s-v1.php');                // D2S v1 System Integration
+include('d2s-v1/includes/gp-d2s-v1.php');         // D2S v1 System Integration - New location
 
-// Tell WordPress to look for page templates in the templates directory
+// Tell WordPress to look for page templates in both templates and d2s-v1/page-templates directories
 add_filter('theme_page_templates', 'gp_child_add_page_templates', 10, 4);
 function gp_child_add_page_templates($post_templates, $wp_theme, $post, $post_type) {
     // Only for pages
@@ -20,7 +20,7 @@ function gp_child_add_page_templates($post_templates, $wp_theme, $post, $post_ty
         return $post_templates;
     }
     
-    // Get templates from templates directory
+    // Get templates from templates directory (for regular custom templates)
     $templates_dir = get_stylesheet_directory() . '/templates/';
     if (file_exists($templates_dir)) {
         $files = glob($templates_dir . 'page-*.php');
@@ -32,6 +32,22 @@ function gp_child_add_page_templates($post_templates, $wp_theme, $post, $post_ty
             if (!empty($template_data['Template Name'])) {
                 $template_slug = 'templates/' . basename($file);
                 $post_templates[$template_slug] = $template_data['Template Name'];
+            }
+        }
+    }
+    
+    // Get templates from d2s-v1/page-templates directory (for D2S v1 templates)
+    $d2s_templates_dir = get_stylesheet_directory() . '/d2s-v1/page-templates/';
+    if (file_exists($d2s_templates_dir)) {
+        $files = glob($d2s_templates_dir . 'page-*.php');
+        foreach ($files as $file) {
+            $template_data = get_file_data($file, array(
+                'Template Name' => 'Template Name'
+            ));
+            
+            if (!empty($template_data['Template Name'])) {
+                $template_slug = 'd2s-v1/page-templates/' . basename($file);
+                $post_templates[$template_slug] = $template_data['Template Name'] . ' (D2S v1)';
             }
         }
     }
