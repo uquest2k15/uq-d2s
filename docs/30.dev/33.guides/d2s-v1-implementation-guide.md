@@ -17,34 +17,67 @@ D2S v1은 Figma 디자인을 Claude Code를 통해 정적 WordPress 템플릿으
 
 ### File Structure
 ```
-/wp-content/themes/generatepress_child/
+├── docs/
+│	├── 10.request/       # child-theme 관련 개발 요청 사항 문서
+│	└── 10.request-d2s/   # custom static page template 관련 개발 요청 사항 문서
 │
-├── includes/
-│   └── gp-d2s-v1.php                    # D2S v1 System Integration
-│
-├── templates/                           # Page templates directory
-│   └── page-{page-name}.php            # Page templates
-│
-├── d2s-v1/                              # D2S v1 시스템 루트
-│   ├── common/
-│   │   └── d2s-v1-common.css           # 공통 CSS (필수)
-│   │
-│   ├── pages/                           # 페이지별 디렉토리
-│   │   ├── {page-name}/
-│   │   │   ├── {page-name}.css         # 페이지 전용 CSS
-│   │   │   ├── {page-name}.js          # 페이지 전용 JS
-│   │   │   └── images/                 # 페이지 전용 이미지
-│   │   │
-│   │   └── about-us/                    # 예시
-│   │       ├── about-us.css
-│   │       ├── about-us.js
-│   │       └── images/
-│   │           └── team-photo.jpg
-│   │
-│   └── docs/
-│       └── d2s-v1-implementation-guide.md
-│
-└── functions.php                        # Include gp-d2s-v1.php here
+└── src/
+    └── wp-content/themes/
+					└── {child-theme-name}/
+						├── functions.php
+						├── style.css
+						├── front-page.php      # Hierarchy-based Templates
+						│
+						├── includes/
+						│   ├── gp-customize.php
+						│   └── gp-blog.php
+						│
+						├── assets/
+						│  	├── images/
+						│	│	├── sections/
+						│   │	└── logo/
+						│   ├── css/
+						│	│	├── front-page.css
+						│   │	└── about-us.css
+						│   ├── js/
+						│	│	├── front-page.js
+						│	│	└── about-us.js
+						│	│
+						│	└── u2-d2s/                # d2c-v1 으로 빌드한 custom static page template들이 **페이지마다 개별적으로** 사용하는 Assets
+						│		└── {page-name}/            # Each page has its own folder
+						│			├── {page-name}.css     # Page-specific CSS
+						│			├── {page-name}.js      # Page-specific JS (optional)
+						│			└── images/             # Page-specific images
+						│				├── hero-bg.jpg
+						│				└── other-images.jpg
+						│       
+						├── templates/         
+						│  	├── page-about-us.php           # 일부 표준 Hierarchy-based Templates
+						│  	├── page-{page-name}.php        # Custom Static Page Templates
+						│  	├── page-{page-name-02}.php     # Custom Static Page Templates
+						│   └── page-{page-name-03}.php     # Custom Static Page Templates
+						│
+						└── d2s-v1/                 # D2S v1 System Root
+							│
+							├── docs/				# d2s-v1 Documents Root
+							│
+							├── includes/
+							│   └── gp-d2s-v1.php   # d2s-v1 implementation source file (functions.php에서 /d2s-v1/includes/gp-d2s-v1.php를 인클루드)
+							│
+							└── assets/                  
+									├── css/
+									│	└── d2s-v1-common.css
+									│
+									├── js/
+									│	└── d2s-v1-common.js
+									│
+									└── images/                 # d2c-v1 으로 빌드한 custom page template들이 **공통적으로** 사용하는 이미지 리소스
+										├── consult-request-form-cta.webp
+										└── symbol/
+											├── solid-circled-check.svg     # ✅ ← 이런 모양인데, 네모가 아니라 원이 solid fill, 안에는 체크
+											├── check.svg                   # √  ← 아래 원과 합쳐서 원 안에 체크표시
+											└── circle.svg                  # ◯
+
 ```
 
 ---

@@ -1,3 +1,11 @@
+# 문서 정보
+- **최초 작성일**:
+- **최종 수정일**: 2025.09.14
+- **버전**: v1.0.1  
+## 변경 이력
+### v1.0.1
+- 폴더 위치 및 구조 변경에 따른 문서 수정
+
 # D2S v1 Quick Setup Guide
 
 ## 🚀 Initial Setup (One-time Only)
@@ -5,22 +13,42 @@
 ### Step 1: Create Directory Structure
 ```bash
 /wp-content/themes/generatepress_child/
-├── includes/
-│   └── gp-d2s-v1.php
-├── d2s-v1/
-│   ├── common/
-│   └── pages/
+						├── functions.php
+						├── style.css
+						├── front-page.php  
+						│
+						├── includes/
+						│   ├── gp-customize.php
+						│   └── gp-blog.php
+						│
+						├── assets/
+						│  	├── images/
+						│	│	├── sections/
+						│   │	└── logo/
+						│   ├── css/
+						│	│	├── front-page.css
+						│   │	└── about-us.css
+						│   ├── js/
+						│	│	├── front-page.js
+						│	│	└── about-us.js
+						│	│
+						│	└── uq-d2s/   # child-theme/assets/에 uq-d2s 폴더를 생성한다.
+						│       
+						├── templates/    # child-theme에 template/ 폴더를 생성한다.
+						│
+						└── uq-d2s/       # git clone https://github.com/uquest2k15/uq-d2s .
 ```
 
-### Step 2: Upload System Files
-1. Place `gp-d2s-v1.php` in `/includes/`
-2. Place `d2s-common-v1.0.css` in `/d2s-v1/common/`
+### Step 2: install uq-d2s
+1. uq-d2s 원격 repo를 chile-theme 폴더에 클론한다. `git clone https://github.com/uquest2k15/uq-d2s .`
+2. child-theme에 template/ 폴더를 생성한다.
+3. child-theme/assets/에 uq-d2s 폴더를 생성한다.
 
 ### Step 3: Update functions.php
 Add this single line to your child theme's functions.php:
 ```php
 // Load D2S v1 System
-require_once get_stylesheet_directory() . '/includes/gp-d2s-v1.php';
+require_once get_stylesheet_directory() . '/uq-d2s/includes/gp-d2s-v1.php';
 ```
 
 ### Step 4: Verify GeneratePress Global Colors
@@ -49,18 +77,18 @@ Ensure your GeneratePress Customizer has these colors set:
 
 ### Step 2: Create Page Directory
 ```
-/d2s-v1/pages/services/
-├── page-services.php
-├── services-v1.css
-├── services-v1.js
-└── images/
-    └── hero-bg.jpg
+wp-content/themes/gp-wilab-blog/assets/uq-d2s/services
+                                                ├── page-services.php
+                                                ├── services-v1.css
+                                                ├── services-v1.js
+                                                └── images/
+                                                    └── hero-bg.jpg
 ```
 
 ### Step 3: Move Template File
-Move `page-services.php` to child theme root:
+Move `page-services.php` to child theme templates folder:
 ```
-/wp-content/themes/generatepress_child/page-services.php
+/wp-content/themes/generatepress_child/templates/page-services.php
 ```
 
 ### Step 4: Create WordPress Page

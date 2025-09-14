@@ -1,5 +1,14 @@
-# {page-name} Design to Static Page Template
-- Figma 디자인을 WordPress GeneratePress child theme의 static page template로 변환하는 워크플로우를 정의
+# 문서 정보
+- **최초 작성일**:
+- **최종 수정일**: 2025.09.14
+- **버전**: v1.0.1  
+## 변경 이력
+### v1.0.1
+- 폴더 위치 및 구조 변경에 따른 문서 수정
+
+# Objective
+- {page-name} Design to Static Page Template
+	- Figma 디자인을 WordPress GeneratePress child theme의 static page template로 변환하는 워크플로우를 정의
 
 ## 1. Figma : idea to Figma design
 - Figma에서 {page-name} 레이어로 디자인
@@ -16,7 +25,7 @@
 - version number가 있는 파일이 복수개이면 version number가 높은 파일을 참조해.
 	- 예시: {page-name}-v1.png, {page-name}-v2.png 2개가 있다면 {page-name}-v2.png를 참조해.
 #### 위치
-- {project-name}/docs/design-mockups/
+- docs/10.request-d2s/design-mockups/{page-name}/
 
 ## 2. Anima : Export Figma design to markup(.html) & style(.css)
 - Figma의 플러그인으로 Figma Design을 markup(.html) & style(.css)으로 변환해 준다.
@@ -32,7 +41,7 @@
 └── static/
 ```
 #### 위치
-- {project-name}/docs/figma-exports/{page-name}/
+- docs/10.request-d2s/figma-exports/{page-name}/
 - version number가 없으면 version number가 없는 폴더를 참조해
 	- 예시: {page-name}/
 - version number가 있으면 version number가 있는 폴더를 참조해
@@ -52,7 +61,7 @@
 - unordered list의 bullet symbol 같은 경우, 동일한 기호를 기호 갯수만큼 다른 svg 파일로 저장하고 있는 경우가 있음. 이 경우 WordPress child theme static page template로 변환할 때 하나의 파일을 참조하도록 할 필요가 있음.
 
 ### 결과물(.md) 및 최종 위치
-- {project-name}/docs/page-template-builds/{page-name}/page-requirements.md
+- docs/10.request-d2s/wp-page-build/{page-name}/page-requirements.md
 - version number가 없으면 version number가 없는 파일을 참조해
 	- 예시: page-requirements.md
 - version number가 있으면 version number가 있는 파일을 참조해
@@ -63,5 +72,5 @@
 ## 4. Claude Code : markup(.html) & style(.css) to WordPress child theme
 - 프롬프트 템플리트를 참고하여 프롬프트를 작성하여 입력한다.
 ### 프롬프트 템플리트 위치
-- {project-name}/docs/prompt-template.md
+- src/wp-content/themes/{child-theme}/uq-d2s/docs/30.dev/33.guides/prompt-template.md
 

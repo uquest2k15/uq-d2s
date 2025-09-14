@@ -1,8 +1,16 @@
+# 문서 정보
+- **최초 작성일**:
+- **최종 수정일**: 2025.09.14
+- **버전**: v1.0.1  
+## 변경 이력
+### v1.0.1
+- 폴더 위치 및 구조 변경에 따른 문서 수정
+
 # Objective
 Figma로 디자인한 {page-name}를 WordPress child theme의 static custom page template로 퍼블리싱한다.
 
 # context
-- 퍼블리싱 과정의 workflow는 {project-name}/docs/workflow.md 를 참조한다.
+- 퍼블리싱 과정의 workflow는 wp-content/themes/{child-theme}/uq-d2s/docs/30.dev/33.guides/workflow.md 를 참조한다.
 - 1 Design = 1 PHP Template + 1 Custom CSS + 1 Custom JS
 - custom page template의 markup 구조와 스타일은 D2S-v1를 따라야 한다.
 ## D2S-v1 (Design-to-Static System Version 1.0)
@@ -11,13 +19,13 @@ Figma로 디자인한 {page-name}를 WordPress child theme의 static custom page
 
 ### Documents
 ```bash
-{project-name}/docs/d2s-v1/
-					├── d2s-v1-implementation-guide.md
-					├── d2s-v1-final-file-structure.md
-					├── d2s-v1-quick-setup.md
-					├── d2s-v1-gp-global-colors-guide.md
-					├── d2s-v1-improvements.md
-					└── d2s-v1-changelog.md
+wp-content/themes/{child-theme}/uq-d2s/docs/30.dev/33.guides/
+													├── d2s-v1-gp-global-colors-guide.md
+													├── d2s-v1-implementation-guide.md
+													├── d2s-v1-quick-setup.md
+													├── prompt-template.md
+													└── workflow.md
+
 ```
 
 ## 디자인 우선순위
@@ -28,12 +36,12 @@ Figma로 디자인한 {page-name}를 WordPress child theme의 static custom page
 
 ### 1. design-mockup
 #### 위치
-- {project-name}/docs/design-mockups/{page-name}.png
+- docs/10.request-d2s/design-mockups/{page-name}/{page-name}.png
 
 ### 2. Figma export markup(.html) & style(.css)
 #### 위치
 ```bash
-{project-name}/docs/figma-exports/{page-name}
+docs/10.request-d2s/figma-exports/{page-name}/
 									├── index.html
 									├── globals.css
 									├── style.css
@@ -43,7 +51,7 @@ Figma로 디자인한 {page-name}를 WordPress child theme의 static custom page
 ```
 ### 3. page-requirements.md 파일
 #### 위치
-- {project-name}/docs/page-template-builds/{page-name}/page-requirements.md
+- docs/10.request-d2s/wp-page-build/{page-name}/page-requirements.md
 - version number가 없으면 version number가 없는 파일을 참조해
 	- 예시: page-requirements.md
 - version number가 있으면 version number가 있는 파일을 참조해
